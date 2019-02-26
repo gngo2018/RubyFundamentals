@@ -1,3 +1,5 @@
+isRunning = false;
+
 def GetOptionChoice(optionChoice)
     option = ""
     case optionChoice
@@ -15,8 +17,7 @@ def GetOptionChoice(optionChoice)
 end
 
 #TODO: See if you can get isRunning = false to kill the loop
-isRunning = true;
-while isRunning == true
+while !isRunning || choice == "n"
     puts "Which option would you like to choose"
     answer = gets.chomp().to_i;
     GetOptionChoice(answer)
@@ -24,8 +25,8 @@ while isRunning == true
     puts "Would you like to continue? y/n"
     choice = gets.chomp().downcase;
     if choice == "y"
-        isRunning == true;
-    else
         isRunning == false;
+    else
+        isRunning == true;
     end
 end
