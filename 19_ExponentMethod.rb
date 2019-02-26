@@ -9,3 +9,11 @@ end
 puts power(4, 3)
 
 #powerNum.times do |index| will do 3 loops given the parameters above
+
+=begin
+    Comment Block where you can
+    put multiple
+    lines 
+    of 
+    comments!
+=end
